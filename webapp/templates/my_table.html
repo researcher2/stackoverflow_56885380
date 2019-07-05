@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Output Of my_table</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Version</th>
+            <th>Name</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{ row.versions }}</td>
+            <td>{{ row.name}} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
